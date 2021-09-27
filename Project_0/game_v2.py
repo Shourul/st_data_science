@@ -14,9 +14,9 @@ def random_predict(number: int = 1) -> int:
     Returns:
         int: Число попыток
     """
-    count = 0          # Счетчик попыток отгадывания
-    min_number = 1     # Начало интервала отгадывания, первоначально 1
-    max_number = 100   # Конец интервала отгадывания, первоначально 100
+    count = 0          # счетчик попыток отгадывания
+    min_number = 1     # начало интервала отгадывания, первоначально 1
+    max_number = 100   # конец интервала отгадывания, первоначально 100
     
     while True:
         count += 1
@@ -24,11 +24,11 @@ def random_predict(number: int = 1) -> int:
             # предполагаемое число, выбранное случайно
 
         if number == predict_number:
-            break                          # выход из цикла если угадали
+            break                            # выход из цикла если угадали
         elif predict_number > number:
-            max_number = predict_number-1     # если не угадали,
-        else:                              # уменьшаем интервал отгадывания
-            min_number = predict_number+1
+            max_number = predict_number - 1  # если не угадали,
+        else:                                # уменьшаем интервал отгадывания
+            min_number = predict_number + 1
         
     return count
 
@@ -42,7 +42,7 @@ def score_game(random_predict) -> int:
     Returns:
         int: среднее количество попыток
     """
-    count_ls = []
+    count_ls = []      # создаем список результатов угадывания (список попыток)
     
     np.random.seed(1)  # фиксируем сид для воспроизводимости
     
