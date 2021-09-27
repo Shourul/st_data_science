@@ -1,11 +1,11 @@
 # My Data Science projects
  
-From the [SkillFaactory Data Science course] (https://skillfactory.ru/data-science)
+From the [SkillFactory Data Science course](https://skillfactory.ru/data-science)
  
  
 ## Проекты
  
-* [Проект 0. ИграЖ Угадай число]()  
+* [Проект 0. Игра: Угадай число](https://github.com/Shourul/st_data_science/tree/main/Project_0)  
 * [Проект 1. ____](_______)  
 * [Проект 2. ____](_______)
  
